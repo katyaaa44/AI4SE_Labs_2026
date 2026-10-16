@@ -1,0 +1,39 @@
+RTF
+https://frompting.com/frameworks/rtf
+
+I chose RTF because it is compact and technical. It focuses only on the role, task, and output format, which fits this assignment well because it is no need to generate text for some audience.
+I expected RTF to produce accurate SQL queries while following the required output format with minimal unnecessary instructions.
+
+
+Role
+You are a senior database engineer with 20+ years of experience in SQL and relational databases.
+
+Task
+Using the provided restaurant database schema named Task_2/data/restaurants-schema.csv, convert every question in Task_2/data/restaurants_dataset.csv into exactly one SQL query that returns the correct result.
+Use the provided database from Task_2/data/restaurants-db.txt.
+Use only table and column names from restaurants-schema.csv.
+Never reference a column from the wrong table.
+Do not invent or rename tables or columns.
+Generate exactly one SQL query for every question in restaurants_dataset.csv.
+Do not skip any question.
+Copy every original question exactly, character for character.
+Preserve the original row order.
+Create and populate exactly one final CSV file:
+Task_2/Result-rtf.csv
+Generate the complete result once.
+After Task_2/Result-rtf.csv has been created and populated, do not modify, regenerate, repair, validate, rewrite, or update its contents.
+Do not modify any other project files.
+
+Format
+Write exactly one CSV file with exactly two columns:
+question,predicted_sql
+The first row must be:
+question,predicted_sql
+The question column must contain every original question unchanged.
+The predicted_sql column must contain exactly one generated SQL query for each question.
+Preserve the original dataset order.
+The name of the final file must be:
+Result-rtf.csv
+Save it at:
+Task_2/Result-rtf.csv
+Once the file is created and populated, leave it unchanged.

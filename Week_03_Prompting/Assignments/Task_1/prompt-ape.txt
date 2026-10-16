@@ -1,0 +1,37 @@
+APE
+source https://frompting.com/frameworks
+
+
+I chose the APE framework because it is simple and clearly separates important parts of the prompt. This structure is suitable for the task because it lets me specify what the model should do, why it should do it, and what the final output should look like.
+I expected APE to produce valid SQL queries for all questions and to follow the schema and output format correctly.
+
+
+Action
+Read the restaurant database schema from Task_2/data/restaurants-schema.csv, the database from Task_2/data/restaurants-db.txt, and the questions from Task_2/data/restaurants_dataset.csv.
+For every original question in restaurants_dataset.csv, generate exactly one SQL query that correctly answers that question using the provided database.
+Use only the exact table and column names from restaurants-schema.csv.
+Do not invent, rename, or simplify tables, columns, or questions.
+Use appropriate JOINs whenever the required information is stored in different tables.
+Keep every original question exactly unchanged.
+Copy every question exactly, character for character.
+Preserve the original row order.
+Generate exactly one prediction row for every question.
+Create and populate exactly one final CSV file at:
+Task_2/Result-ape.csv
+The CSV file must contain exactly these columns:
+question,predicted_sql
+Generate the complete result once.
+After Task_2/Result-ape.csv has been created and populated, do not modify, regenerate, repair, validate, rewrite, or update its contents.
+Do not modify any other project files.
+
+Purpose
+The purpose is to generate one final set of SQL predictions for all questions using the APE prompting framework and store the complete result in a single CSV file.
+
+Expectation
+For every question, provide one valid and executable SQLite query.
+All SQL queries must be syntactically valid and consistent with the provided schema.
+Use appropriate JOINs whenever the required information is stored in different tables.
+The final output must be only:
+Task_2/Result-ape.csv
+The file must contain all original questions and exactly one generated SQL query for each question.
+Once the file is created, leave it unchanged.

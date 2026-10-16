@@ -1,0 +1,45 @@
+CRISP
+https://frompting.com/frameworks/crisp
+
+I chose CRISP because it is highly structured and separates the context, role, intent, style, and parameters of the task. For the task, I expect this structure to reduce ambiguity and help the model generate more precise and executable SQL queries.
+
+Context
+I am working with a restaurant database and we have a dataset containing questions from customers.
+The database schema is available in this project at:
+Task_2/data/restaurants-schema.csv
+The restaurant database is available at:
+Task_2/data/restaurants-db.txt
+The dataset containing the questions is available at:
+Task_2/data/restaurants_dataset.csv
+
+Role
+You are a senior database engineer with 20+ years of experience in SQL and relational databases.
+
+Intent
+Read the schema, database, and dataset files from the project.
+For every question in the provided dataset, generate exactly one SQL query that will return the correct result for that question.
+Create and populate exactly one final CSV result file with all generated predictions.
+Generate the complete result once.
+After the final CSV file has been created and populated, do not modify, regenerate, repair, rewrite, validate, or update its contents.
+Do not modify any other project files.
+
+Style
+Write clear, syntactically valid SQLite queries.
+The SQL must be executable against the provided database.
+
+Parameters
+Add the exact CSV header:
+question,predicted_sql
+Use only the provided database schema restaurants-schema.csv.
+Use appropriate JOINs between tables whenever the required information is stored in different tables.
+The question column must contain all original questions unchanged from restaurants_dataset.csv.
+Copy every question exactly, character for character.
+Do not shorten, paraphrase, clean, simplify, or invent questions.
+Never reference a column from the wrong table.
+Generate exactly one prediction row for every question from restaurants_dataset.csv.
+Do not skip any question.
+Preserve the original row order.
+Create and populate the final result file directly.
+Save the completed file exactly at:
+Task_2/Result-crisp.csv
+Once Task_2/Result-crisp.csv has been created and populated, leave it unchanged.
